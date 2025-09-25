@@ -1,169 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Manger - Aquazoo des Ciel2</title>
+  <title>Restauration au Zoo</title>
   <style>
-    body {
-      margin:0;
-      font-family: Arial, sans-serif;
-      background-color: #f4faff;
-      color: #333;
-    }
-
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 14px;
-      justify-content: center;
-      background: #0077cc;
-      padding: 12px;
-      margin: 0;
-      flex-wrap: wrap;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      font-size: 16px;
-      padding: 8px 12px;
-      border-radius: 6px;
-      transition: 0.3s;
-    }
-    nav ul li a:hover {
-      background: #005fa3;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 16px;
-      text-align: center;
-    }
-
-    h1 {
-      color: #0077cc;
-      margin-bottom: 30px;
-    }
-
-    /* Section restauration */
-    .resto-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-bottom: 40px;
-      align-items: flex-start;
-    }
-
-    .resto-card {
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      width: 280px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .resto-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .resto-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .resto-card h2 {
-      margin: 15px 0 10px 0;
-      font-size: 20px;
-    }
-
-    .resto-card p {
-      padding: 0 15px 15px 15px;
-      color: #555;
-    }
-
-
-    .restaurant { border-top: 5px solid #0077cc; }
-    .paillote { border-top: 5px solid #ff9933; }
-    .crepes { border-top: 5px solid #cc3366; }
-    .glaces { border-top: 5px solid #33ccff; }
-
-
-
-    @media(max-width: 800px) {
-      .resto-section {
-        flex-direction: column;
-        align-items: center;
-      }
-      .resto-card {
-        width: 90%;
-      }
-    }
+    body { font-family: Arial, sans-serif; background-color:#f4faff; margin:0; color:#333; text-align:center; }
+    h1,h2 { color:#0077cc; margin-top:20px; }
+    p { font-size:18px; margin-bottom:20px; }
+    img { max-width:100%; border-radius:8px; margin-bottom:20px; }
+    .side { width:45%; display:inline-block; vertical-align:top; margin:0 2%; }
+    a { text-decoration:none; color:#0077cc; font-weight:bold; }
+    a:hover { color:#005fa3; }
+    @media(max-width:800px){ .side{ width:90%; display:block; margin:10px auto; } }
   </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="visiter.html">Visiter</a></li>
-      <li><a href="acces.html">Accès</a></li>
-      <li><a href="tarifs.html">Tarifs</a></li>
-      <li><a href="activites.html">Activités</a></li>
-      <li><a href="fauves.html">Fauves</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="manger.html">Manger</a></li>
-    </ul>
-  </nav>
-</header>
+<h1>Options de restauration</h1>
 
-<div class="container">
-  <h1>Nos options de restauration</h1>
-
-  <div class="resto-section">
-
-    <div class="resto-card restaurant">
-      <img src="restaurant.jpg" alt="Restaurant simple">
-      <h2>Restaurant simple</h2>
-      <p>Repas complets pour toute la famille, plats chauds et boissons inclus.</p>
-    </div>
-
-
-    <div class="resto-card paillote">
-      <img src="paillote.jpg" alt="Paillote">
-      <h2>Paillote</h2>
-      <p>Détente au bord de l’eau avec snacks, salades et boissons fraîches.</p>
-    </div>
-
-
-    <div class="resto-card crepes">
-      <img src="stand-crepes.jpg" alt="Stand à crêpes">
-      <h2>Stand à crêpes</h2>
-      <p>Crêpes sucrées et gourmandes pour petits et grands, faites sur place.</p>
-    </div>
-
-
-    <div class="resto-card glaces">
-      <img src="stand-glaces.jpg" alt="Stand à glaces">
-      <h2>Stand à glaces</h2>
-      <p>Glaces artisanales et sorbets pour se rafraîchir lors de la visite.</p>
-    </div>
-  </div>
-
+<div class="side">
+<h2>Restaurant simple</h2>
+<img src="restaurant.jpg" alt="Restaurant simple">
+<p>Profitez de repas complets et variés pour toute la famille.</p>
 </div>
+
+<div class="side">
+<h2>Paillote</h2>
+<img src="paillote.jpg" alt="Paillote">
+<p>Snack et boissons fraîches face au golfe.</p>
+</div>
+
+<div class="side">
+<h2>Stand à crêpes</h2>
+<img src="crepes.jpg" alt="Crêpes">
+<p>Dégustez crêpes sucrées ou salées à tout moment de la journée.</p>
+</div>
+
+<div class="side">
+<h2>Stand à glaces</h2>
+<img src="glaces.jpg" alt="Glaces">
+<p>Glaces artisanales pour se rafraîchir en été.</p>
+</div>
+
+<p><a href="index.html">← Retour à l'accueil</a></p>
 
 </body>
 </html>
