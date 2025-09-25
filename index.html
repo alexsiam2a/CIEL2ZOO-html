@@ -1,61 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>AQUAZOO</title>
- 
+  <title>AQUAZOO DES CIEL2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4faff;
+      margin: 0;
+      color: #333;
+      text-align: center;
+    }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #0077cc;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    header nav ul li a:hover {
+      background: #005fa3;
+    }
+    h1 { color: #0077cc; margin-top: 20px; }
+    iframe { border: 0; border-radius: 8px; margin: 20px 0; }
+    img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px; }
+  </style>
 </head>
-
-<>
-
+<body>
 
 <header>
   <nav>
-    <ul style="list-style:none; display:flex; gap:20px; justify-content:center; background:#0077cc; padding:15px; border-radius:8px;">
-      <li><a href="index.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Accueil</a></li>
-      <li><a href="contact.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Contact</a></li>
-      <li><a href="visiter.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Visiter</a></li>
-      <li><a href="acces.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Accès</a></li>
-      <li><a href="tarifs.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Tarifs</a></li>
-      <li><a href="activites.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Activités</a></li>
-      <li><a href="fauves.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Fauves</a></li>
-      <li><a href="photos.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Photos</a></li>
-      <li><a href="manger.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Manger</a></li>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="visiter.html">Visiter</a></li>
+      <li><a href="acces.html">Accès</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="activites.html">Activités</a></li>
+      <li><a href="fauves.html">Fauves</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="manger.html">Manger</a></li>
     </ul>
   </nav>
 </header>
 
+<h1>Bienvenue à l'Aquazoo des CIEL2</h1>
+<p>Nous sommes situés vers le golfe de Lava entre terre et mer !</p>
 
-					
-	
+<img src="zoo.jpg" alt="Photo du zoo" width="600">
 
-	
-  <h2 style="text-align:center; 
-           color:#0077cc; 
-           font-family:Arial, sans-serif; 
-           font-size:28px; 
-           background:#e6f2ff; 
-           padding:12px; 
-           border-radius:10px; 
-           box-shadow:2px 2px 8px rgba(0,0,0,0.2);">
-	  Bienvenue à l'Aquazoo des ciel2 <br>
-  </h2 >
-	<h3 style="text-align:center; 
-           color:#0077cc; 
-           font-family:Arial, sans-serif; 
-           font-size:28px; 
-           background:#fff700; 
-           padding:12px; 
-           border-radius:10px; 
-           box-shadow:2px 2px 8px rgba(0,0,0,0.2);">	
-		  ☀️ Voici la météo d’aujourd’hui à Villanova☁️
-	</h3>
+<h2>Voici la météo d'aujourd'hui :</h2>
+<iframe id="widget_autocomplete_preview" width="150" height="300" frameborder="0"
+src="https://meteofrance.com/widget/prevision/203510##03A9F4B3"
+title="Prévisions Villanova par Météo-France"></iframe>
 
- <CENTER>
-<iframe id="widget_autocomplete_preview"  width="450" height="450" frameborder="0" src="https://meteofrance.com/widget/prevision/203510##03A9F4B3" title="Prévisions Villanova par Météo-France"> </iframe>
-	
-	<img src="aquazzo1.jpg"/ width=20%>
-	
- </CENTER>
+<h2>Voici l'emplacement du zoo :</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2659.258382708426!2d8.658677010094992!3d41.974184635159126!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1758262262515!5m2!1sfr!2sfr"
+width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 </body>
 </html>
