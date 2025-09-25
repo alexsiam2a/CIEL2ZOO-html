@@ -2,47 +2,72 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Activités</title>
-
-  <meta charset="UTF-8">
-  <title>Mon Zoo</title>
+  <title>Activités - Aquazoo des Ciel2</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       background-image: url('fondact.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
       margin: 0;
+      color: #333;
     }
+
+    header { position: sticky; top: 0; z-index: 10; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      background: #0077cc;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    nav ul li a { text-decoration: none; color: white; font-weight: bold; font-size: 18px; padding: 8px 12px; border-radius: 6px; transition: 0.3s; }
+    nav ul li a:hover { background: #005fa3; }
+
+    .container { max-width: 1100px; margin: 30px auto; padding: 0 16px; text-align: center; background-color: rgba(255,255,255,0.9); border-radius: 10px; padding-bottom: 30px; }
+
+    h1 { color: #0077cc; margin-bottom: 15px; }
+    p { margin-bottom: 20px; font-size: 18px; }
+
+    iframe { width: 100%; max-width: 560px; height: 315px; margin-bottom: 20px; border-radius: 8px; }
+
   </style>
-
-
 </head>
 <body>
+
 <header>
   <nav>
-    <ul style="list-style:none; display:flex; gap:20px; justify-content:center; background:#0077cc; padding:15px; border-radius:8px;">
-      <li><a href="index.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Accueil</a></li>
-      <li><a href="contact.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Contact</a></li>
-      <li><a href="visiter.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Visiter</a></li>
-      <li><a href="acces.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Accès</a></li>
-      <li><a href="tarifs.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Tarifs</a></li>
-      <li><a href="activites.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Activités</a></li>
-      <li><a href="fauves.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Fauves</a></li>
-      <li><a href="photos.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Photos</a></li>
-      <li><a href="manger.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Manger</a></li>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="visiter.html">Visiter</a></li>
+      <li><a href="acces.html">Accès</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="activites.html">Activités</a></li>
+      <li><a href="fauves.html">Fauves</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="manger.html">Manger</a></li>
     </ul>
   </nav>
 </header>
 
-<center>
+<div class="container">
   <h1>Nos activités</h1>
-  <p>Venez découvrir les animations quotidiennes : nourrissage des lions, spectacle des otaries, visites guidées,toboglans,pêche nokill.</p>
+  <p>Venez découvrir les animations quotidiennes : nourrissage des lions, spectacle des otaries, visites guidées, toboggans, pêche no-kill.</p>
 
-  <h2>Vidéo de présentation du toboglands:</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/bvNtuyngL7A?si=xz20AJRjbHwANpje" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <h2>Vidéo de présentation de la pêche no kill:</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EcBlpAD2puo?si=UTrB7xdVwK_edG3l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</center>
+  <h2>Vidéo de présentation du toboggans :</h2>
+  <iframe src="https://www.youtube.com/embed/bvNtuyngL7A?si=xz20AJRjbHwANpje" title="Toboggans"></iframe>
+
+  <h2>Vidéo de présentation de la pêche no-kill :</h2>
+  <iframe src="https://www.youtube.com/embed/EcBlpAD2puo?si=UTrB7xdVwK_edG3l" title="Pêche no-kill"></iframe>
+
+
+</div>
+
 </body>
 </html>
