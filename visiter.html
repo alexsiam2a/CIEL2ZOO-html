@@ -2,36 +2,126 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>AQUAZOO VISITER</title>
+  <title>Visiter - Aquazoo des Ciel2</title>
+  <style>
+    body {
+      margin:0;
+      font-family: Arial, sans-serif;
+      background-color: #f4faff;
+      color: #333;
+    }
+    /* Menu de navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      background: #0077cc;
+      padding: 12px;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      background: #005fa3;
+    }
+    /* Conteneur principal */
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 16px;
+    }
+    h2 {
+      color: #0077cc;
+      margin-top: 30px;
+    }
+    .section {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+    .section img, .section iframe {
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+    }
+    .section-left img, .section-left iframe {
+      flex: 1 1 300px;
+    }
+    .section-right img, .section-right iframe {
+      flex: 1 1 400px;
+    }
+    .text-block {
+      flex: 1 1 400px;
+    }
+    @media(max-width: 800px) {
+      .section {
+        flex-direction: column;
+      }
+      .section-left img, .section-left iframe, .section-right img {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
+
 <header>
   <nav>
-    <ul style="list-style:none; display:flex; gap:20px; justify-content:center; background:#0077cc; padding:15px; border-radius:8px;">
-      <li><a href="index.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Accueil</a></li>
-      <li><a href="contact.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Contact</a></li>
-      <li><a href="visiter.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Visiter</a></li>
-      <li><a href="acces.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Accès</a></li>
-      <li><a href="tarifs.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Tarifs</a></li>
-      <li><a href="activites.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Activités</a></li>
-      <li><a href="fauves.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Fauves</a></li>
-      <li><a href="photos.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Photos</a></li>
-      <li><a href="manger.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Manger</a></li>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="visiter.html">Visiter</a></li>
+      <li><a href="acces.html">Accès</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="activites.html">Activités</a></li>
+      <li><a href="fauves.html">Fauves</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="manger.html">Manger</a></li>
     </ul>
   </nav>
 </header>
-  <center>
-<H2>Voici notre bateau semi-rigide pour visiter le golfe:</H2>
-  <img src="bato.jpg"/ width=15%>
-<H2>Voici le golfe de Lava:</H2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17528.482085365453!2d8.652994356354602!3d41.97701451618976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1758815580156!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-</center>
+<div class="container">
+
+
+  <div class="section section-left">
+    <img src="bato.jpg" alt="Bateau semi-rigide pour visiter le golfe" style="width:300px;">
+    <div class="text-block">
+      <h2>Notre bateau semi-rigide</h2>
+      <p>Pour visiter le golfe de Lava, nous vous proposons notre bateau semi-rigide. Une expérience unique pour découvrir la côte et les paysages environnants.</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17528.482085365453!2d8.652994356354602!3d41.97701451618976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1758815580156!5m2!1sfr!2sfr" width="450" height="300" style="border:0;"></iframe>
+  </div>
+
+
+  <div class="section section-right">
+    <div class="text-block">
+      <h2>Carte du Zoo</h2>
+      <p>Découvrez l'organisation du parc et planifiez votre visite facilement grâce à cette carte détaillée.</p>
+    </div>
+    <img src="aquazoo.jpg" alt="Carte du Zoo" style="width:700px;">
+  </div>
+
+</div>
 
 </body>
 </html>
-
-
-
-
-
