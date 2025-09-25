@@ -2,57 +2,180 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Fauves du zoo</title>
+  <title>Fauves du zoo - Aquazoo des Ciel2</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4faff;
+      color: #333;
+    }
+
+    /* Menu de navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      background: #0077cc;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #005fa3;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 16px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    /* Grille des fauves */
+    .fauves-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .fauve-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .fauve-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .fauve-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .fauve-card h3 {
+      margin: 10px 0 5px 0;
+      color: #0077cc;
+    }
+
+    .fauve-card p {
+      padding: 0 10px;
+      color: #555;
+    }
+
+    /* Lien retour */
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-link:hover {
+      color: #005fa3;
+    }
+
+    @media(max-width: 800px) {
+      .fauve-card {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
+
 <header>
   <nav>
-    <ul style="list-style:none; display:flex; gap:20px; justify-content:center; background:#0077cc; padding:15px; border-radius:8px;">
-      <li><a href="index.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Accueil</a></li>
-      <li><a href="contact.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Contact</a></li>
-      <li><a href="visiter.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Visiter</a></li>
-      <li><a href="acces.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Accès</a></li>
-      <li><a href="tarifs.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Tarifs</a></li>
-      <li><a href="activites.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Activités</a></li>
-      <li><a href="fauves.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Fauves</a></li>
-      <li><a href="photos.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Photos</a></li>
-      <li><a href="manger.html" style="text-decoration:none; color:white; font-weight:bold; font-size:18px; padding:8px 12px; border-radius:6px; transition:0.3s;">Manger</a></li>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="visiter.html">Visiter</a></li>
+      <li><a href="acces.html">Accès</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="activites.html">Activités</a></li>
+      <li><a href="fauves.html">Fauves</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="manger.html">Manger</a></li>
     </ul>
   </nav>
 </header>
 
-
+<div class="container">
   <h1>Voici nos fauves</h1>
   <p>Découvrez les rois de la savane et de la jungle :</p>
-  <ul><h3>
-    <table border=2>
-      <tr>
-    <td><li><b>Lions</b> – le roi des animaux(d'où l'expression "OHHHHH! LIONNNN"!)</li>  </td>
-        <td> <img src="lion.jpg" alt="Lion" width="250"></td>
-      </tr>
-   <tr>
-<td><li><b>Tigres</b> – puissants félins d’Asie(d'où l'expression"tié un TIGREEE!"</li>    </td>
-     <td><img src="tigre.jpg" alt="Tigre" width="250">    </td>
-   </tr>
-      <tr>   
-      <td><li><b>Guépards</b> – Le plus rapide de la savanne</li>     </td>
-      <td><img src="guepard.jpg" alt="Tigre" width="250">      </td>
-      </tr>
-      <tr>    
-      <td> <li><b>Lynx</b> – Celui avec les meilleurs yeux,il chasse la nuit(d'où l'expression "T'y a des yeux lynxxxx!"</li>       </td>
-      <td>  <img src="lynx.jpg" alt="Tigre" width="250">   </td>
-      </tr>
- 
-    
-    
-    
-    
-   </h3></ul>
- 
-  
-  
- 
- </table>
+
+  <div class="fauves-grid">
+    <!-- Lion -->
+    <div class="fauve-card">
+      <img src="lion.jpg" alt="Lion">
+      <h3>Lion</h3>
+      <p>Le roi des animaux (d'où l'expression "OHHHHH! LIONNNN"!)</p>
+    </div>
+
+    <!-- Tigre -->
+    <div class="fauve-card">
+      <img src="tigre.jpg" alt="Tigre">
+      <h3>Tigre</h3>
+      <p>Puissant félin d’Asie (d'où l'expression "Tié un TIGREEE!")</p>
+    </div>
+
+    <!-- Guépard -->
+    <div class="fauve-card">
+      <img src="guepard.jpg" alt="Guépard">
+      <h3>Guépard</h3>
+      <p>Le plus rapide de la savanne.</p>
+    </div>
+
+    <!-- Lynx -->
+    <div class="fauve-card">
+      <img src="lynx.jpg" alt="Lynx">
+      <h3>Lynx</h3>
+      <p>Celui avec les meilleurs yeux, il chasse la nuit (d'où l'expression "T'y a des yeux lynxxxx!")</p>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-link">← Retour à l'accueil</a>
+</div>
 
 </body>
 </html>
