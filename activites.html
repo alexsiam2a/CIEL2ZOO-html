@@ -1,39 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Activités - Aquazoo des Ciel2</title>
+  <title>Activités du Zoo</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-image: url('fondact.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      margin: 0;
-      color: #333;
-    }
+    body { font-family: Arial, sans-serif; background-image:url('fondact.jpg'); background-size:cover; background-attachment:fixed; margin:0; color:#333; text-align:center; }
+    .container { background:rgba(255,255,255,0.9); max-width:1100px; margin:30px auto; padding:20px; border-radius:10px; }
+    h1,h2 { color:#0077cc; margin-top:20px; }
+    p { font-size:18px; margin-bottom:20px; }
+    iframe { width:100%; max-width:560px; height:315px; border-radius:8px; margin-bottom:20px; }
+    a { text-decoration:none; color:#0077cc; font-weight:bold; }
+    a:hover { color:#005fa3; }
+  </style>
+</head>
+<body>
+<div class="container">
+<h1>Nos activités</h1>
+<p>Venez découvrir les animations quotidiennes : nourrissage des lions, visites guidées du golfe de Lava, tobogglans, pêche no-kill.</p>
 
-    header { position: sticky; top: 0; z-index: 10; }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      background: #0077cc;
-      padding: 15px;
-      border-radius: 8px;
-      margin: 0;
-      flex-wrap: wrap;
-    }
-    nav ul li a { text-decoration: none; color: white; font-weight: bold; font-size: 18px; padding: 8px 12px; border-radius: 6px; transition: 0.3s; }
-    nav ul li a:hover { background: #005fa3; }
+<h2>Vidéo de présentation du tobogglans :</h2>
+<iframe src="https://www.youtube.com/embed/bvNtuyngL7A" allowfullscreen></iframe>
 
-    .container { max-width: 1100px; margin: 30px auto; padding: 0 16px; text-align: center; background-color: rgba(255,255,255,0.9); border-radius: 10px; padding-bottom: 30px; }
+<h2>Vidéo de présentation de la pêche no-kill :</h2>
+<iframe src="https://www.youtube.com/embed/EcBlpAD2puo" allowfullscreen></iframe>
 
-    h1 { color: #0077cc; margin-bottom: 15px; }
-    p { margin-bottom: 20px; font-size: 18px; }
-
+<p><a href="index.html">← Retour à l'accueil</a></p>
+</div>
+</body>
+</html>
     iframe { width: 100%; max-width: 560px; height: 315px; margin-bottom: 20px; border-radius: 8px; }
 
   </style>
